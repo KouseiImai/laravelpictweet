@@ -1,6 +1,7 @@
 @extends('layouts.tweets')
 
 @section('content')
+
   <div class="contents row">
     @foreach ( $tweets as $tweet )
       <div class="content_post" style="background-image: url({{ $tweet->image }});">
@@ -28,4 +29,5 @@
       </div>
     @endforeach
   </div>
+
 @endsection
